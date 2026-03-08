@@ -1,0 +1,14 @@
+<h2>Secure Group Chat</h2>
+
+<form method="POST">
+<input type="text" name="message" placeholder="Enter message">
+<button type="submit">Send</button>
+</form>
+
+<h3>Messages</h3>
+
+{% for user,msg in messages %}
+<p><b>{{user}}</b>: {{msg}}</p>
+{% endfor %}
+
+<a href="/dashboard">Back</a>
